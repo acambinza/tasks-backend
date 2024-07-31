@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage {
+        stage ('Init'){
             steps {
                 sh 'echo backend'
             }
