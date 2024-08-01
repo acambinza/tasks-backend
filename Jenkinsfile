@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        JAVA_HOME = tool name: 'JDK-11', type: 'jdk'
         SONAR_SCANNER_OPTS = '--add-opens java.base/java.lang=ALL-UNNAMED'
     }
     
